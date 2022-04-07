@@ -1,0 +1,127 @@
+.pricing {
+  padding: 200px 0;
+  &__wrapper {
+    max-width: 1069px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__head {
+    margin-bottom: 94px;
+    text-align: center;
+    .title {
+      font-weight: 700;
+      font-size: 60px;
+      margin-bottom: 31px;
+    }
+    .info {
+      font-size: 20px;
+    }
+  }
+  &__body {
+    background-color: $color-white;
+    border-radius: 8px;
+    padding: 0 50px 50px;
+    @include m {
+        padding: 0 30px 50px;
+    }
+  }
+  &__plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    &-txt {
+      font-weight: 700;
+      font-size: 20px;
+      @include m {
+          font-size: 16px;
+      }
+      svg {
+        width: 30px;
+        height: 36px;
+        display: block;
+        margin-bottom: 13px;
+      }
+    }
+    &-items {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      text-align: center;
+      &:nth-child(2) {
+        color: $color-white;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 64px 46px;
+        position: relative;
+        z-index: 1;
+        @include m {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 34px 22px;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: calc(100% + 14px);
+          background: $color-primary;
+          border-radius: 26px;
+          z-index: -1;
+        }
+      }
+      span {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-weight: 700;
+        font-size: 60px;
+      }
+      .per {
+        font-weight: 700;
+        font-size: 14px;
+        color: #b5aebb;
+        margin-bottom: 80px;
+      }
+    }
+  }
+  &__table {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tr {
+        &:nth-child(odd) {
+          position: relative;
+          z-index: 1;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #f9f2ff;
+            border-radius: 26px;
+            z-index: -1;
+          }
+        }
+        td {
+          padding: 28px 30px;
+          @include m {
+              padding: 16px 20px;
+          }
+          &:nth-child(1) {
+            font-weight: 700;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
