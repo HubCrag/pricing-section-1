@@ -1,5 +1,6 @@
 ## Hubcrag Pricing Section
 
+### [Watch it on youtube](https://youtu.be/2aekKHOEZJ0)
 
 ### Setup demo project
 
